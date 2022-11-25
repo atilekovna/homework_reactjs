@@ -1,25 +1,26 @@
 import React, { Component } from 'react';
 
 class AboutAs extends Component {
-  showText = false;
   constructor(props) {
     super(props);
-    this.state ={title: ""};
+    this.state ={text: false};
   }
 
   changeTitle = () => {
-    this.showText = !this.showText;
-
-    this.showText
-      ? this.setState({title: "Hello"})
-      : this.setState({title: ""})
+    this.setState({text: !this.state.text});
   }
 
   render() {
     return (
       <>
-        <p>{this.state.title}</p>
         <button onClick={this.changeTitle}>click me</button>
+        {
+          this.state.text === true
+          ?
+            <p>hello</p>
+            :
+            ""
+        }
       </>
     );
   }
