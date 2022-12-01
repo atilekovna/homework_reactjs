@@ -1,0 +1,14 @@
+.user-info {
+    background: #61619d;
+}
+
+.user-info h3 {
+    padding-top: 20px;
+    color: #933c3c;
+}
+
+.user-info span {
+    font-weight: bold;
+    color: cadetblue;
+}
+
